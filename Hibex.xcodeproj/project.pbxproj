@@ -19,6 +19,8 @@
 		84BD7B432AF2414700C4B1AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BD7B422AF2414700C4B1AC /* Preview Assets.xcassets */; };
 		84BD7B4A2AF2429400C4B1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84BD7B492AF2429400C4B1AC /* Assets.xcassets */; };
 		84BD7B4D2AF2448700C4B1AC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD7B4C2AF2448700C4B1AC /* Color.swift */; };
+		84DB04432B74170500668805 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB04422B74170500668805 /* HomeViewModel.swift */; };
+		84F0B30A2B74C67200BFCC9C /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F0B3092B74C67200BFCC9C /* CoinDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		84BD7B422AF2414700C4B1AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84BD7B492AF2429400C4B1AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		84BD7B4C2AF2448700C4B1AC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		84DB04422B74170500668805 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		84F0B3092B74C67200BFCC9C /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		8441D0152AF253C600CA972F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				84DB04422B74170500668805 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -126,8 +131,9 @@
 		84BD7B3A2AF2414600C4B1AC /* Hibex */ = {
 			isa = PBXGroup;
 			children = (
-				845FB9CD2B70D17B00794888 /* Models */,
 				84BD7B4B2AF2446A00C4B1AC /* Extensions */,
+				84F0B3082B74C64D00BFCC9C /* Services */,
+				845FB9CD2B70D17B00794888 /* Models */,
 				8441D0132AF253A300CA972F /* Core */,
 				84BD7B492AF2429400C4B1AC /* Assets.xcassets */,
 				84BD7B3B2AF2414600C4B1AC /* HibexApp.swift */,
@@ -153,6 +159,14 @@
 				84992AA12B72CED600B221C0 /* Double.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84F0B3082B74C64D00BFCC9C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84F0B3092B74C67200BFCC9C /* CoinDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84992AA02B72CE4000B221C0 /* CoinRowView.swift in Sources */,
+				84DB04432B74170500668805 /* HomeViewModel.swift in Sources */,
 				84BD7B3E2AF2414600C4B1AC /* ContentView.swift in Sources */,
 				841911422AF42999005936E5 /* HomeView.swift in Sources */,
+				84F0B30A2B74C67200BFCC9C /* CoinDataService.swift in Sources */,
 				84BD7B3C2AF2414600C4B1AC /* HibexApp.swift in Sources */,
 				8407F3FB2AF7BA2B00760671 /* CircleButtonView.swift in Sources */,
 				84BD7B4D2AF2448700C4B1AC /* Color.swift in Sources */,
@@ -371,6 +387,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Hibex;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -402,6 +419,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Hibex;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

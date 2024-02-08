@@ -9,10 +9,17 @@ import SwiftUI
 
 @main
 struct HibexApp: App {
+    
+    @StateObject private var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
-                .navigationBarBackButtonHidden(true)
+            NavigationView(content: {
+                HomeView()
+                    .toolbar(.hidden)
+            })
+            .environmentObject(vm)
+            
         }
     }
 }
